@@ -113,20 +113,21 @@ function fun3() {
 
     emi = parseInt((P / T) + int).toFixed(2);
 
-    var total = parseInt(int * T) + parseInt(P);
+    total = parseInt(int * T) + parseInt(P);
 
-    document.getElementById('2').ihhh
-    function fun4() {
-        P = document.getElementById("int").value;
-        I = document.getElementById("int2").value;
-        T = document.getElementById("int3").value;
-
-        int = (P * I * T / 100).toFixed(2);
-        total = (parseInt(int) + parseInt(P)).toFixed(2);
-
-        document.getElementById("3").innerHTML = "INTREST AMOUNT - " + "    🤑🤑💸" + int + "<br><br>" + "TOTAL AMOUNT IS " + total;
-    }
-
-
+    document.getElementById('2').innerHTML = "PER MONTH EMI IS 💵" + EMI + "<br><br>" + "TOTAL AMOUNT IS 💵" + total;
 
 }
+function fun4() {
+    P = document.getElementById("int").value;
+    I = document.getElementById("int2").value;
+    T = document.getElementById("int3").value;
+
+    int = (P * I * T / 100).toFixed(2);
+    total = (parseInt(int) + parseInt(P)).toFixed(2);
+
+    document.getElementById("3").innerHTML = "INTREST AMOUNT - " + "    🤑🤑💸" + int + "<br><br>" + "TOTAL AMOUNT IS " + total;
+}
+
+
+
