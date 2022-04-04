@@ -118,6 +118,7 @@ function fun3() {
     document.getElementById('2').innerHTML = "PER MONTH EMI IS 💵" + emi + "<br><br>" + "TOTAL AMOUNT IS 💵" + total;
 
 }
+//page 4 discount calculator
 function fun4() {
     P = document.getElementById("int").value;
     I = document.getElementById("int2").value;
