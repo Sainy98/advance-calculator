@@ -115,7 +115,7 @@ function fun3() {
 
     total = parseInt(int * T) + parseInt(P);
 
-    document.getElementById('2').innerHTML = "PER MONTH EMI IS 💵" + EMI + "<br><br>" + "TOTAL AMOUNT IS 💵" + total;
+    document.getElementById('2').innerHTML = "PER MONTH EMI IS 💵" + emi + "<br><br>" + "TOTAL AMOUNT IS 💵" + total;
 
 }
 function fun4() {
