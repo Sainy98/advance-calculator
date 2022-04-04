@@ -98,8 +98,8 @@ function fun() {
     percent = (per2 - total).toFixed(1);
     save_price = (per2 - percent).toFixed(1);
 
-    document.getElementById('1').innerHTML = 'YOU SAVED  ' + save_price + '<br>'
-        + 'DISCOUNT PRICE ' + percent;
+    document.getElementById('1').innerHTML = 'YOU SAVED  💵' + save_price + '<br>'
+        + 'DISCOUNT PRICE 💵' + percent;
     // document.getElementById('2').innerHTML = 'TOTAL AMOUNT ' + percent;
 }
 
