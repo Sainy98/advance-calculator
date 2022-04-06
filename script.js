@@ -5,7 +5,7 @@ page3 = document.getElementById('page3');
 page4 = document.getElementById('page4');
 page5 = document.getElementById('page5');
 page6 = document.getElementById('page6');
-
+back = document.getElementById("back");
 function home() {
 
     content.style.display = "block";
@@ -15,6 +15,8 @@ function home() {
     page4.style.display = "none";
     page5.style.display = "none";
     page6.style.display = "none";
+    back.style.innerHTML = "HOME";
+    document.getElementById("back").innerHTML = "HOME";
 }
 
 function age() {
@@ -23,6 +25,8 @@ function age() {
 
     content.style.display = "none";
 
+    back.style.innerHTML = "back";
+    document.getElementById("back").innerHTML = "BACK";
 
 }
 function pg2() {
@@ -30,35 +34,35 @@ function pg2() {
     page2.style.display = "block";
 
     content.style.display = "none";
-
+    document.getElementById("back").innerHTML = "BACK";
 }
 function pg3() {
 
     page3.style.display = "block";
 
     content.style.display = "none";
-
+    document.getElementById("back").innerHTML = "BACK";
 }
 function pg4() {
 
     page4.style.display = "block";
 
     content.style.display = "none";
-
+    document.getElementById("back").innerHTML = "BACK";
 }
 function pg5() {
 
     page5.style.display = "block";
 
     content.style.display = "none";
-
+    document.getElementById("back").innerHTML = "BACK";
 }
 function pg6() {
 
     page6.style.display = "block";
 
     content.style.display = "none";
-
+    document.getElementById("back").innerHTML = "BACK";
 }
 // page 1 age calculator
 function fun1() {
@@ -70,17 +74,17 @@ function fun1() {
     var d2 = date.getDate();
     var m2 = 1 + date.getMonth();
     var y2 = date.getFullYear();
-    // var month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-    // if (d - d2) {
-    //     d2 = d2 + month[m2 - 1];
-    //     m = m2 - 1
+    var month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    if (d - d2) {
+        d2 = d2 + month[m2 - 1];
+        m = m2 - 1
 
-    // }
-    // if (m > m2) {
-    //     m2 = m2 + 12;
-    //     y2 = y2 - 1;
+    }
+    if (m > m2) {
+        m2 = m2 + 12;
+        y2 = y2 - 1;
 
-    // }
+    }
     var d = d2 - d;
 
     var m = m - m2;
@@ -98,9 +102,9 @@ function fun() {
     percent = (per2 - total).toFixed(1);
     save_price = (per2 - percent).toFixed(1);
 
-    document.getElementById('1').innerHTML = 'YOU SAVED  💵' + save_price + '<br>'
-        + 'DISCOUNT PRICE 💵' + percent;
-    // document.getElementById('2').innerHTML = 'TOTAL AMOUNT ' + percent;
+    document.getElementById('1').innerHTML = 'YOU SAVED  ₹' + save_price + '<br><br>'
+        + 'DISCOUNT PRICE ₹' + percent;
+
 }
 
 //page 3 EMI Calculator
@@ -115,10 +119,10 @@ function fun3() {
 
     total = parseInt(int * T) + parseInt(P);
 
-    document.getElementById('2').innerHTML = "PER MONTH EMI IS 💵" + emi + "<br><br>" + "TOTAL AMOUNT IS 💵" + total;
+    document.getElementById('2').innerHTML = "PER MONTH EMI IS ₹" + emi + "<br><br>" + "TOTAL AMOUNT IS ₹" + total;
 
 }
-//page 4 discount calculator
+//page 4 invesment calculator
 function fun4() {
     P = document.getElementById("int").value;
     I = document.getElementById("int2").value;
@@ -127,7 +131,7 @@ function fun4() {
     int = (P * I * T / 100).toFixed(2);
     total = (parseInt(int) + parseInt(P)).toFixed(2);
 
-    document.getElementById("3").innerHTML = "INTREST AMOUNT - " + "    🤑🤑💸" + int + "<br><br>" + "TOTAL AMOUNT IS " + total;
+    document.getElementById("3").innerHTML = "INTREST AMOUNT " + " ₹" + int + "<br><br>" + "TOTAL AMOUNT IS ₹" + total;
 }
 
 

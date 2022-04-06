@@ -29,8 +29,8 @@ h1{
    align-items: center;
    cursor: pointer;
    font-family: 'system-ui';
-   background-image: linear-gradient(
-91deg, #c553b6, #7221b7);
+   background-image: linear-gradient( 91deg, #c553b600, #c887ff);
+text-align: center;
 }
    h1:hover{
         background-color: rgb(230, 222, 211);
@@ -44,9 +44,8 @@ h1{
 }
 
 body{
-    background-color: rgb(71, 71, 221);
-    background-image: linear-gradient(
-45deg, #ed008c, #6c49d9);
+  background-color: rgb(221 221 239 / 4%);
+  background-image: linear-gradient( 45deg, #e5e1e400, #a38af4a3);
 }
 
 
@@ -159,8 +158,8 @@ img{
             }
   #p4{
       position: absolute;
-     margin-top: 126px;
-     margin-left: 23px;
+     margin-top: 123px;
+     margin-left: 18px;
     font-family: system-ui;
     font-weight: bolder;
                    }
@@ -172,31 +171,40 @@ img{
   #per{
    
     margin-left: 70px;
-    background: #0000003b;
+    background: #ccd2ed21;
     width: 55px;
     border-radius: 10px;
     padding: 8px;
     margin-inline-end: inherit;
+    color: white;
+    font-weight: 800;
+    border: 2px solid black;
+  
 }
 
   
   #per2{
   
     margin-left: 93px;
-    background: #0000003b;
+    background: #ccd2ed21;
     width: 55px;
     border-radius: 10px;
     padding: 8px;
     margin-inline-end: inherit;
     margin-top: inherit;
-
+    color: white;
+    font-weight: 800;
+    border: 2px solid black;
 
   }
    h3{
     font-family: system-ui;
     border: 2px solid transparent;
     text-decoration: overline;
-  }
+    color: white;
+    padding: 40px;
+}
+  
   footer{
 
 text-align: center;
