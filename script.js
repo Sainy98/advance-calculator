@@ -18,7 +18,7 @@ function home() {
     back.style.innerHTML = "HOME";
     document.getElementById("back").innerHTML = "HOME";
 }
-
+//age calculator
 function age() {
 
     pg1.style.display = "block";
@@ -66,30 +66,34 @@ function pg6() {
 }
 // page 1 age calculator
 function fun1() {
-    d = document.getElementById("D1").value;
-    m = document.getElementById("D2").value;
-    y = document.getElementById("D3").value;
+    var d = parseInt(document.getElementById("D1").value, 10);
+    var m = parseInt(document.getElementById("D2").value, 10);
+    var y = parseInt(document.getElementById("D3").value, 10);
 
+    //get the current date
     var date = new Date();
     var d2 = date.getDate();
-    var m2 = 1 + date.getMonth();
+    var m2 = date.getMonth() + 1;
     var y2 = date.getFullYear();
+
+    //define the number of days in each month
     var month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-    if (d - d2) {
+
+    if (d > d2) {
         d2 = d2 + month[m2 - 1];
         m = m2 - 1
-
     }
+
     if (m > m2) {
         m2 = m2 + 12;
         y2 = y2 - 1;
-
     }
-    var d = d2 - d;
 
-    var m = m - m2;
-    var y = y2 - y;
-    document.getElementById("d5").innerHTML = y + " year   " + m + " month " + d + " day ";
+    var dayDiff = d2 - d;
+    var monthDiff = m - m2;
+    var yearDiff = y2 - y;
+
+    document.getElementById("d5").innerHTML = yearDiff + " year   " + monthDiff + " month " + dayDiff + " day ";
 }
 
 //page 2 discount calculator
@@ -109,17 +113,19 @@ function fun() {
 
 //page 3 EMI Calculator
 function fun3() {
-    P = document.getElementById("emi").value;
-    I = document.getElementById("emi1").value;
-    T = document.getElementById("emi2").value;
+    var P = parseFloat(document.getElementById("emi").value);
+    var I = parseFloat(document.getElementById("emi1").value);
+    var T = parseFloat(document.getElementById("emi2").value);
 
-    int = P * I * T / 100;
+    //convert interest rate to monthly rate
+    var r = (I / 12) / 100;
 
-    emi = parseInt((P / T) + int).toFixed(2);
+    //calculate the EMI
+    var n = P * r * Math.pow(1 + r, T);
+    var d = Math.pow(1 + r, T) - 1;
+    var emi = (n / d).toFixed(2);
 
-    total = parseInt(int * T) + parseInt(P);
-
-    document.getElementById('2').innerHTML = "PER MONTH EMI IS ₹" + emi + "<br><br>" + "TOTAL AMOUNT IS ₹" + total;
+    document.getElementById('2').innerHTML = "PER MONTH EMI IS ₹" + emi;
 
 }
 //page 4 invesment calculator
