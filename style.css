@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1080px) {
+@media screen and (max-width: 600x) {
   #back {
     font-size: 41px;
     padding: 0 20px 0 20px;
@@ -6,16 +6,13 @@
     align-items: center;
     cursor: pointer;
     font-family: 'system-ui';
-    background-color: #b99fbd;
+    background-color: #000000;
     /* background-image: linear-gradient(91deg, #c553b600, #c887ff); */
     text-align: center;
   }
 
-
-
-  div {
-
-    padding: 0 24%;
+  #content {
+    background-color: #000000;
   }
 
 }
@@ -27,7 +24,7 @@ div {
   border-radius: 24px;
   text-align: -webkit-center;
   margin: inherit;
-  background-image: linear-gradient(50deg, #b99fbd, transparent);
+  background-image: linear-gradient(50deg, #7a008d, transparent);
   margin: 2%;
 }
 
@@ -79,9 +76,7 @@ body {
 #page5,
 #page6 {
   display: none;
-  height: 500px;
-
-
+  height: 530px;
 }
 
 #D1 {
