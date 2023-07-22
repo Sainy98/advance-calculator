@@ -1,18 +1,11 @@
-@media screen and (max-width: 600x) {
+@media screen and (max-width: 600px) {
   #back {
-    font-size: 41px;
-    padding: 0 20px 0 20px;
-    border-radius: 10px;
-    align-items: center;
-    cursor: pointer;
-    font-family: 'system-ui';
-    background-color: #000000;
-    /* background-image: linear-gradient(91deg, #c553b600, #c887ff); */
-    text-align: center;
+    background-color: #cf07f2;
+
   }
 
   #content {
-    background-color: #000000;
+    background-color: #d51ac5;
   }
 
 }
@@ -46,8 +39,7 @@ div {
   align-items: center;
   cursor: pointer;
   font-family: 'system-ui';
-  background-color: #d3c5d56f;
-  /* background-image: linear-gradient(91deg, #c553b600, #c887ff); */
+  background-color: #d3c5d5cb;
   text-align: center;
 }
 
