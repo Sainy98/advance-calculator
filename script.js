@@ -104,7 +104,7 @@ function fun() {
 
     total = (per2 / 100) * per;
     percent = (per2 - total).toFixed(1);
-    save_price = (per2 - percent).toFixed(1);
+    save_price = (per - total).toFixed(1);
 
     document.getElementById('1').innerHTML = 'YOU SAVED  ₹' + save_price + '<br><br>'
         + 'DISCOUNT PRICE ₹' + percent;
