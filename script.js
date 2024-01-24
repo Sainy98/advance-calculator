@@ -66,6 +66,7 @@ function pg6() {
 }
 // page 1 age calculator
 function fun1() {
+
     var d = parseInt(document.getElementById("D1").value, 10);
     var m = parseInt(document.getElementById("D2").value, 10);
     var y = parseInt(document.getElementById("D3").value, 10);
@@ -81,7 +82,7 @@ function fun1() {
 
     if (d > d2) {
         d2 = d2 + month[m2 - 1];
-        m = m2 - 1
+        m = m - 1;
     }
 
     if (m > m2) {
@@ -90,10 +91,10 @@ function fun1() {
     }
 
     var dayDiff = d2 - d;
-    var monthDiff = m - m2;
+    var monthDiff = m2 - m;
     var yearDiff = y2 - y;
 
-    document.getElementById("d5").innerHTML = yearDiff + " year   " + monthDiff + " month " + dayDiff + " day ";
+    document.getElementById("d5").innerHTML = yearDiff + " year " + monthDiff + " month " + dayDiff + " day";
 }
 
 //page 2 discount calculator
